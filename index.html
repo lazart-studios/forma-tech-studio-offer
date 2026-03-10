@@ -33,7 +33,7 @@
         <h1 class="client-name">Forma Tech Studio</h1>
         <p class="client-tagline">Website de prezentare + branding</p>
         <div class="divider"></div>
-        <p style="color: var(--text-secondary); font-size: .95rem; max-width: 560px; margin: 0 auto;">Ofertă construită după modelul The Uniform Maker Offer, adaptată pentru un website de prezentare modern, clar și orientat spre conversie pentru Forma Tech Studio.</p>
+        <p style="color: var(--text-secondary); font-size: .95rem; max-width: 560px; margin: 0 auto;">Website de prezentare modern, clar și orientat spre conversie pentru Forma Tech Studio.</p>
       </div>
     </header>
     <div class="calculator-card">
@@ -53,9 +53,9 @@
               <li>Newsletter opt-in simplu</li>
             </ul>
           </div>
-          <div class="base-price-amount">€900</div>
+          <div class="base-price-amount">€700</div>
         </div>
-        <div class="note">Prețul de bază include structura completă a site-ului de prezentare. Funcționalitățile tehnice avansate și brandingul sunt configurate mai jos ca module adiționale, după modelul ofertei vechi.</div>
+        <div class="note">Prețul de bază include structura completă a site-ului de prezentare. Funcționalitățile tehnice avansate și brandingul sunt configurate mai jos ca module adiționale.</div>
         <div class="addons-section">
           <h3>Module Suplimentare</h3>
           <div class="addons-grid">
@@ -66,8 +66,8 @@
             <div class="addon-item" data-name="Identitate vizuală (logo + branding)" data-price="300"><div class="addon-checkbox"></div><div class="addon-info"><div class="addon-name">Identitate vizuală (logo + branding)</div><div class="addon-desc">Logo, direcție vizuală, paletă de culori și tipografie de bază.</div></div><div class="addon-price">€300</div></div>
           </div>
         </div>
-        <div class="summary-preview"><h4>Rezumat Selecție</h4><ul class="summary-list" id="summaryList"><li class="selected-item"><span>✓ Pachet Base Website</span><span>€900</span></li></ul></div>
-        <div class="total-section"><span class="total-label">Total Estimat</span><span class="total-amount" id="totalPrice">€900</span></div>
+        <div class="summary-preview"><h4>Rezumat Selecție</h4><ul class="summary-list" id="summaryList"><li class="selected-item"><span>✓ Pachet Base Website</span><span>€700</span></li></ul></div>
+        <div class="total-section"><span class="total-label">Total Estimat</span><span class="total-amount" id="totalPrice">€700</span></div>
         <div class="cta-section"><a href="#" onclick="sendWhatsAppOffer(); return false;" class="cta-button"><span>Solicită Oferta Personalizată</span><span>→</span></a></div>
       </div>
     </div>
@@ -80,7 +80,7 @@
     </footer>
   </div>
   <script>
-    const BASE_PRICE = 900;
+    const BASE_PRICE = 700;
     let selectedAddons = new Set();
     document.addEventListener('DOMContentLoaded', function () { calculateTotal(); document.querySelectorAll('.addon-item').forEach(item => item.addEventListener('click', function () { toggleAddon(this); })); });
     function toggleAddon(element) { const name = element.dataset.name; if (selectedAddons.has(name)) { selectedAddons.delete(name); element.classList.remove('selected'); } else { selectedAddons.add(name); element.classList.add('selected'); } calculateTotal(); }
